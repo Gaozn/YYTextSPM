@@ -652,6 +652,13 @@ NS_ASSUME_NONNULL_BEGIN
                                                attachmentSize:(CGSize)attachmentSize
                                                   alignToFont:(UIFont *)font
                                                     alignment:(YYTextVerticalAlignment)alignment;
+/// 添加 userInfo
++ (NSMutableAttributedString *)yy_attachmentStringWithContent:(nullable id)content
+                                                    userInfo:(NSDictionary *)userInfo
+                                                    contentMode:(UIViewContentMode)contentMode
+                                                    attachmentSize:(CGSize)attachmentSize
+                                                    alignToFont:(UIFont *)font
+                                                    alignment:(YYTextVerticalAlignment)alignment;
 
 /**
  Creates and returns an attahment from a fourquare image as if it was an emoji.
