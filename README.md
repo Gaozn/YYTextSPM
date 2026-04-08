@@ -7,7 +7,17 @@ YYTextSPM
 1、集合引入
 
 ~~~ 
-.package(url: "https://github.com/Gaozn/YYTextSPM.git", branch: "main")
+dependencies: [
+	.package(url: "https://github.com/Gaozn/YYTextSPM.git", branch: "main")
+]
+
+.target(
+    name: "MyLibrary",
+    dependencies: [
+       ...
+       .product(name: "YYText", package: "YYTextSPM"),
+    ]
+ )
 ~~~
 
 2、Package Dependencies引入
