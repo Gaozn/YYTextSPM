@@ -1,0 +1,4 @@
+module YYText {
+    umbrella header "/Users/bsyimac/Desktop/YYText/YYText/include/YYText.h"
+    export *
+}
